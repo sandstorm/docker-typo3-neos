@@ -1,0 +1,3 @@
+.vagrant/
+docker-neos-run/neos-latest.tar.gz
+neos-distribution/
