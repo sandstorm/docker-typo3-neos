@@ -86,16 +86,15 @@ if !FORWARD_DOCKER_PORTS.nil?
     (49000..49900).each do |port|
       config.vm.forward_port port, port
     end
+    config.vm.customize ["modifyvm", :id, "--memory", 2048]
   end
 
   Vagrant::VERSION >= "1.1.0" and Vagrant.configure("2") do |config|
     (49000..49900).each do |port|
       config.vm.network :forwarded_port, :host => port, :guest => port
     end
+    config.vm.customize ["modifyvm", :id, "--memory", 2048]
   end
-  
-
-  config.vm.customize ["modifyvm", :id, "--memory", 2048]
 end
 
 
