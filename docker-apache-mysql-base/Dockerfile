@@ -7,6 +7,7 @@ RUN echo deb http://archive.ubuntu.com/ubuntu precise universe >> /etc/apt/sourc
 RUN apt-get update
 RUN apt-get install -q -y php5 php5-mysql mysql-server
 RUN apt-get install -q -y php5-gd
+RUN a2enmod rewrite
 
 # create empty "flowdb" database
 RUN mysqld & sleep 2 && mysqladmin create flowdb
