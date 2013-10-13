@@ -16,7 +16,3 @@ echo "        password: ''" >> Configuration/Development/Docker/Settings.yaml
 echo "    utility:" >> Configuration/Development/Docker/Settings.yaml
 echo "      environment:" >> Configuration/Development/Docker/Settings.yaml
 echo "        temporaryDirectoryBase: '/tmp'" >> Configuration/Development/Docker/Settings.yaml
-
-
-FLOW_CONTEXT=Development/Docker ./flow doctrine:migrate
-FLOW_CONTEXT=Development/Docker ./flow site:import --packageKey TYPO3.NeosDemoTypo3Org
