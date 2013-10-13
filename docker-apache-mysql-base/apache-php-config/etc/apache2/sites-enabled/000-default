@@ -21,5 +21,6 @@
 
 	CustomLog ${APACHE_LOG_DIR}/access.log combined
 	
-	SetEnv FLOW_CONTEXT Development/Docker
+	# SetEnv FLOW_CONTEXT Development/Docker
+	SetEnv FLOW_CONTEXT Production/Docker
 </VirtualHost>
