@@ -1,5 +1,10 @@
 /configure-flow.sh
 
+sleep 3
+# create empty "flowdb" database
+mysqladmin create flowdb
+
+
 cd /var/www/
 FLOW_CONTEXT=Development/Docker ./flow doctrine:migrate
 FLOW_CONTEXT=Development/Docker ./flow site:import --packageKey TYPO3.NeosDemoTypo3Org

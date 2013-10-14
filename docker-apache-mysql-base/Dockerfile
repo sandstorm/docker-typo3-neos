@@ -9,9 +9,6 @@ RUN apt-get install -q -y php5 php5-mysql mysql-server
 RUN apt-get install -q -y php5-gd
 RUN a2enmod rewrite
 
-# create empty "flowdb" database
-RUN mysqld & sleep 2 && mysqladmin create flowdb
-
 ADD ./apache-php-config /
 
 # the vagrant user has UID 1000, so we need to create a user inside the VM as well.
