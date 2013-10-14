@@ -12,7 +12,7 @@ Development with Vagrant
 
 For development, I am using vagrant. To get started, run:
 
-``
+```
 vagrant up
 
 # wait a little until guest additions are installed
@@ -23,7 +23,7 @@ vagrant up # sometimes, starting the VM does not always work. then, just re-run 
 
 vagrant ssh
 # now, check that /vagrant exists and has content. If not, reboot the vagrant VM.
-``
+```
 
 
 Checking out Neos
@@ -40,7 +40,7 @@ If running vagrant, enter the vagrant VM using `vagrant ssh`, and then `cd /vagr
 the following commands:
 
 
-``
+```
 # build a neos image.
 # in some cases, this does not run through yet; so in this case, just re-run this command.
 ./build-run-neos.sh
@@ -50,4 +50,4 @@ the following commands:
 
 # now, go to http://localhost:49080 and enjoy Neos. There is a backend user "admin/password"
 # created already.
-``
+```
