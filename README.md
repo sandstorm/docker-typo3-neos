@@ -30,7 +30,8 @@ Checking out Neos
 -----------------
 
 For further work, you need a Neos checkout inside the `neos-distribution` folder of
-this directory. You can create one using the `./checkout-neos.sh` script.
+this directory. You can create one using the `./checkout-neos.sh` script; or alternatively
+use `./checkout-neos-1-0-0.sh`.
 
 
 Building and Running Neos
